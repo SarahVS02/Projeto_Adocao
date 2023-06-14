@@ -1,0 +1,530 @@
+
+/* fim header*/
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .login .container6 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario_login{
+    margin-bottom: 100px;
+    background-color: rgb(137, 74, 0);
+    background: rgb(137, 74, 0) transparent;
+    background: rgba(137, 74, 0, 0.4);
+    height: 600px;
+    width: 400px;
+    padding: 15px 50px;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    border: solid 3px #062C2D;
+    border-radius: 45px;
+}
+
+
+.banner_login{
+
+    display: flex;
+    background-image: url(../assets_adocao/Mobile\ login-pana.png);
+    background-size: cover;
+    border-radius: 75px;
+    width: 650px;
+    height: 653px;
+    margin-top: 5px;
+    
+    }
+
+
+.titulo_login{
+    
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 800;
+    margin: 10px 0 30px;
+}
+
+.inputs{
+
+    margin: 0;
+    font-size: 15px;
+    font-weight: 800;
+    font-family: poppins;
+}
+
+
+.formulario_login .button_login{
+    height: 55px;
+    width: 250px;
+    background-color: #062C2D;
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 85px;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 20px;
+    opacity: 0.9;
+}
+
+
+.titulo_login{
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 800;
+    margin: 10px 0 30px;
+}
+
+.titulo_input{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.inputs{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    border: solid 1.5px black;
+    border-radius: 10px;
+    height: 40px;
+    margin: 5px;
+    color: #000;
+}
+
+.button_login{
+    margin-top: 50px;
+}
+
+.erro{
+    color: red;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.formulario_login button:hover{
+    border: solid black 3px;
+    transition: 0.4s;
+    color: black;
+    opacity: 1;
+}
+
+
+.footer{
+    display: flex;
+    width: 100%;
+    background-color: #062C2D;
+    flex-direction: column;
+    height: 90px;
+    padding-top: 40px;
+}
+
+.footer .container4{
+    display: flex;
+    
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer span{
+    display: flex;
+    align-self: center;
+    color: whitesmoke;
+}
+
+
+.conxteto{
+
+    display: flex;
+    width: 150px;
+    height: 1000px;
+    margin: 10px;
+    margin-bottom: 350px;
+    margin-right: 450px;
+
+}
+
+
+.banner .container1{
+
+    display: flex;
+    width: 150px;
+    justify-content: center;
+
+
+}
+
+.container1{
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 85px;
+}
+
+.titulo_contexto{
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    color: #000;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 550px;
+    overflow-wrap: break-word;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    margin-left: 25px;
+
+   
+
+}
+
+.texto{
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    color: #000;
+    width: 500px;
+    justify-content: center;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 25px;
+
+
+}
+
+.texto1{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    color: #000;
+    width: 500px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+   }
+
+   
+.container2{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    background-color: #894a00;
+    background: rgb(137, 74, 0) transparent;
+    background: rgba(137, 74, 0, 0.4);
+    
+
+
+}
+
+
+/*SAIBA MAIS*/
+
+
+
+.container3{
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+
+}
+
+
+
+.saiba_mais{
+
+    display: flex;
+    flex-direction: row;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin-top: 150px;
+    margin-left: 100px;
+    justify-content: space-between;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+
+.baners{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 150px;
+}
+
+.banner2{
+    display: flex;
+
+    background-image: url(../assets_adocao/Adopt\ a\ pet-pana.png);
+    background-size: cover;
+    border-radius: 75px;
+    width: 350px;
+    height: 370px;
+    margin-top: 50px; 
+}
+
+.banner3{
+
+    display: flex;
+    background-image: url(../assets_adocao/Adopt\ a\ pet-amico.png);
+    background-size: cover;
+    border-radius: 75px;
+    width: 350px;
+    height: 370px;
+    margin-top: 50px; 
+    margin-left: 150px; 
+    margin-right: 150px; 
+  
+}
+
+.banner4{
+    display: flex;
+
+    background-image: url(../assets_adocao/Dog\ walking-bro.png);
+    background-size: cover;
+    border-radius: 75px;
+    width: 350px;
+    height: 370px;
+    margin-top: 50px; 
+    margin-right: 150px; 
+    margin-right: 150px; 
+    
+}
+
+.titulo_saiba_mais{
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 250px;
+    color: #000;
+    margin-top: 150px;
+    text-align: center;
+
+}
+
+.texto2{
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    color: #000;
+    width: 300px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align:center;
+
+}
+
+
+.texto3{
+
+    display: flex;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    width: 300px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    margin-right: 150px;
+
+}
+
+.texto4{
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: #fff;
+    width: 300px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    margin-right: 150px;
+}
+
+
+.texto5{
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: #fff;
+    width: 300px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    margin-right: 150px;
+}
+
+
+.botao_saiba_mais {
+    color: #000;
+    margin-bottom: 20px;
+    font-size: small;
+    text-decoration: none;
+    opacity: 0.9;
+    padding: 15px;
+}
+
+
+.botao_saiba_mais :hover{
+    opacity: 1;
+    transition: 0.6s;
+    text-decoration: underline;
+    opacity: 1;
+}
+
+
+.container3 .botao_saiba_mais{
+    height: 55px;
+    width: 250px;
+    background-color: #062C2D;
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 85px;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 20px;
+    opacity: 0.9;
+}
+
+
+
+  .conxteto2{
+
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin: 10px;
+    margin-bottom: 350px;
+    margin-right: 450px;
+
+}
+
+
+.banner5 .container3{
+
+    display: flex;
+    width: 150px;
+    justify-content: center;
+
+
+}
+
+.container3{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 85px;
+}
+
+
+
+.texto6{
+
+    font-family:Georgia, monospace;
+    font-size: 10px;
+    color: #000;
+    width: 500px;
+    justify-content: center;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 25px;
+
+
+}
+
+.texto7{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+    color: #000;
+    width: 500px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+   
+
+
+}
+
+.banner5{
+    display: flex;
+
+    background-image: url(../assets_adocao/Animal\ shelter-cuate.png);
+    background-size: cover;
+    border-radius: 75px;
+    width: 650px;
+    height: 653px;
+    margin-top: 5px;
+    
+    
+
+}
+
+
+.footer{
+    display: flex;
+    width: 100%;
+    background-color: #062C2D;
+    flex-direction: column;
+    height: 90px;
+    padding-top: 40px;
+}
+
+.footer .container4{
+    display: flex;
+    
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer span{
+    display: flex;
+    align-self: center;
+    color: whitesmoke;
+}

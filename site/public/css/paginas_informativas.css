@@ -1,0 +1,247 @@
+
+.container_adocao_responsavel{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+
+
+
+.titulo_contexto_informativo{
+
+    display: flex;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    color: #062C2D;
+    width: 550px;
+    overflow-wrap: break-word;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align:left;
+    font-weight: bolder;
+
+}
+
+.texto_informativo{
+
+    display: flex;
+    flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color:black;
+    width: 1100px;
+    overflow-wrap: break-word;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align:justify;
+    font-weight: bolder;
+    margin: 20px;
+}
+
+.banner_informativo{
+
+    display: flex;
+    
+    background-image: url(../assets_adocao/Good\ doggy-bro.png);
+    background-size: cover;
+    border-radius: 75px;
+    width: 450px;
+    height: 470px;
+    margin:20px;
+    
+    
+
+}
+
+
+.banner_informativo2{
+
+    display: flex;
+    
+    background-image: url(../assets_adocao/Good\ doggy-pana.png);
+    background-size: cover;
+    border-radius: 75px;
+    width: 450px;
+    height: 470px;
+    margin:20px;
+    
+}
+
+
+.banner_informativo3{
+
+    display: flex;
+    background-image: url(../assets_adocao/Dog\ walking-pana.png);
+    background-size: cover;
+    border-radius: 75px;
+    width: 450px;
+    height: 470px;
+    margin:20px;
+    justify-content: left;
+    
+}
+
+.banner_informativo4{
+
+    display: flex;
+    background-image: url(../assets_adocao/Animal\ shelter-rafiki.png);
+    background-size: cover;
+    border-radius: 75px;
+    width: 450px;
+    height: 470px;
+    margin:20px;
+    justify-content: left;
+    
+}
+
+
+.banner_informativo5{
+
+    display: flex;
+    
+    background-image: url(../assets_adocao/Veterinary-bro.png);
+    background-size: cover;
+    border-radius: 75px;
+    width: 450px;
+    height: 470px;
+    margin:20px;
+    
+    
+
+}
+
+
+
+.banner_informativo6{
+
+    display: flex;
+    
+    background-image: url(../assets_adocao/Veterinary-amico.png);
+    background-size: cover;
+    border-radius: 75px;
+    width: 450px;
+    height: 470px;
+    margin:20px;
+    
+    
+
+}
+
+
+.banner_informativo7{
+
+    display: flex;
+    
+    background-image: url(../assets_adocao/pet\ care-rafiki.png);
+    background-size: cover;
+    border-radius: 75px;
+    width: 450px;
+    height: 470px;
+    margin:20px;
+    
+}
+
+
+.banner_informativo8{
+
+    display: flex;
+    background-image: url(../assets_adocao/A\ day\ at\ the\ park-bro.png);
+    background-size: cover;
+    border-radius: 75px;
+    width: 450px;
+    height: 470px;
+    margin:20px;
+    justify-content: left;
+    
+}
+
+.banner_informativo9{
+
+    display: flex;
+    background-image: url(../assets_adocao/Cautious\ dog-amico.png);
+    background-size: cover;
+    border-radius: 75px;
+    width: 450px;
+    height: 470px;
+    margin:20px;
+    justify-content: left;
+    
+}
+
+.banner_informativo10{
+
+    display: flex;
+    background-image: url(../assets_adocao/Good\ doggy-amico.png);
+    background-size: cover;
+    border-radius: 75px;
+    width: 450px;
+    height: 470px;
+    margin:20px;
+    justify-content: left;
+    
+}
+
+.banner_informativo11{
+
+    display: flex;
+    background-image: url(../assets_adocao/Christmas\ stocking-amico.png);
+    background-size: cover;
+    border-radius: 75px;
+    width: 450px;
+    height: 470px;
+    margin:20px;
+    justify-content: left;
+    
+}
+
+
+.banner_informativo12{
+
+    display: flex;
+    
+    background-image: url(../assets_adocao/Cautious\ dog-bro.png);
+    background-size: cover;
+    border-radius: 75px;
+    width: 450px;
+    height: 470px;
+    margin:20px;
+    
+    
+
+}
+
+
+
+.banner_informativo13{
+
+    display: flex;
+    
+    background-image: url(../assets_adocao/Veterinary-amico.png);
+    background-size: cover;
+    border-radius: 75px;
+    width: 450px;
+    height: 470px;
+    margin:20px;
+    
+    
+
+}
+
+
+.banner_informativo14{
+
+    display: flex;
+    
+    background-image: url(../assets_adocao/Accept\ terms-rafiki.png);
+    background-size: cover;
+    border-radius: 75px;
+    width: 450px;
+    height: 470px;
+    margin:20px;
+    
+}

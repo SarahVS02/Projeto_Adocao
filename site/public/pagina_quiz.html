@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adocao | Home</title>
+        <link rel="stylesheet" href="./css/dashboard.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+
+    <body>
+  
+        
+    
+        <div class="side_menu">
+            <div class="container">
+            </div>
+                <ul class="navbar">
+                    <a class="botao_quiz" href="pagina_quiz.html"><i
+                            class="fa fa-solid fa-question-circle">quiz</i></a>
+
+                    <a class="botao_logout" href="Login.html"><i
+                            class="fa-solid fa-sign-out">logout</i></a>
+        </ul>
+    
+</div>
+ 
+  
+
+    <div class="mostrar_pergunta" id="div_mostrar_perguntas"></div>
+
+    <div id="div_mostrar_pontos"></div>
+
+   
+    <div id="div_botao" class="botao_iniciar_quiz">
+        <div class="content_quiz">
+            <h2 class="titulo_quiz">Teste agora o seu conhecimento!</h2>
+            <img src="./assets_adocao/Startled-rafiki.png" id="img" alt="">
+            <button id="iniciar_quiz" onclick="iniciar_quiz()">Iniciar Quiz</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container4">
+            <span>CopyRight @ AdoCão 2023</span>
+
+        </div>
+
+    </div>
+
+    <script>
+
+
+var pergunta_atual = `` 
+var acertos  = 0
+var erros = 0
+var pontos = 0
+var container_quiz = document.getElementById("div_mostrar_perguntas")
+var botao_iniciar_quiz = document.getElementById("div_botao")    
+
+
+
+var lista_perguntas = [
+    `<div id="container_quiz" class="container_quiz">
+        <div class="content">
+            <div class="formulario_quiz">
+                <h4 class="questao">Os dentes dos filhotes de cães começam a aparecer em:</h4>
+                <button class="botao" onclick="errada()">Um mês</button>    
+                <button class="botao" onclick="certa()">3 semanas</button>    
+                <button class="botao" onclick="errada()">Uma semana</button>    
+                <button class="botao" onclick="errada()">3 meses</button>    
+            </div>
+        </div>
+    </div>`,
+    `<div id="container_quiz" class="container_quiz">
+        <div class="content">
+            <div class="formulario_quiz">
+                <h4 class="questao">Geralmente, a boca de um cão tem menos bactérias e germes do que a boca de um:</h4>
+                <button class="botao" onclick="errada()">Passaro</button>    
+                <button class="botao" onclick="errada()">Gato</button>    
+                <button class="botao" onclick="errada()">Coelho</button>    
+                <button class="botao" onclick="certa()">Humano</button>    
+            </div>
+        </div>
+    </div>`,
+    `<div id="container_quiz" class="container_quiz">
+        <div class="content">
+                <div class="formulario_quiz">
+                <h4 class="questao">Com quantos anos em média uma cadela entra no cio?</h4>
+                <button class="botao" onclick="errada()">02 meses</button>    
+                <button class="botao" onclick="certa()">06 - 09 meses</button>    
+                <button class="botao" onclick="errada()">01 - 03 anos</button>    
+                <button class="botao" onclick="errada()">08 - 10 meses</button>    
+            </div>
+        </div>
+    </div>`,
+    `<div id="container_quiz" class="container_quiz">
+        <div class="content">
+            <div class="formulario_quiz">
+                <h4 class="questao">Em média quantos anos vive um cachorro?</h4>
+                <button class="botao" onclick="certa()">10 - 13 anos</button>    
+                <button class="botao" onclick="errada()">06 - 09 meses</button>    
+                <button class="botao" onclick="errada()">6 - 15 anos</button>    
+                <button class="botao" onclick="errada()">25 - 30 anos</button>    
+            </div>
+        </div>
+    </div>`,
+    `<div id="container_quiz" class="container_quiz">
+        <div class="content">
+            <div class="formulario_quiz">
+                <h4 class="questao">Quais são as doenças comuns nos cães da raça Pinscher?</h4>
+                <button class="botao" onclick="errada()">Hepatite e Rabiose</button>
+                <button class="botao" onclick="errada()">Cinomose e pavorvirose</button>    
+                <button class="botao" onclick="certa()">Catarata e tremedeira</button>    
+                <button class="botao" onclick="errada()"> Cirrose e Reumatismo</button>    
+            </div>
+        </div>
+    </div>
+    `,
+   
+    
+    `<button class="botao_fincalizar" onclick="finalizar_quiz()">Finalizar Quiz</button>`
+
+    ]
+
+
+        function iniciar_quiz(){
+            botao_iniciar_quiz.style.display = "none"
+
+        for(var i = 0; i < lista_perguntas.length; i++){
+
+            pergunta_atual += lista_perguntas[i]
+
+          
+
+            
+        }
+
+        div_mostrar_perguntas.innerHTML += `${pergunta_atual}`
+
+         // Enviando o valor da nova input
+
+
+       
+    }
+
+
+    function certa(){
+
+    acertos += 1 
+    
+}
+
+    function errada(){
+
+    erros += 1
+}
+
+
+
+        function finalizar_quiz(){
+            container_quiz.style.display = "none"
+
+            pontos = (acertos * 50)
+        
+    mostrar_pontos()
+}
+
+function mostrar_pontos(){
+    var usuario = sessionStorage.NOME_USUARIO;
+
+    div_mostrar_pontos.innerHTML = `<div class="contagemDePontos">
+        <div class="content_resultado">
+            <div class="container_acertos">
+                <h4>Olá, <span>${usuario}! </span> Você acertou</h4>
+                <span>${acertos}</span> 
+                <h4>Perguntas</h4>
+            </div>
+            <div class="container_pontos">
+                <h4>Você tem agora </h4>
+                <span>${(acertos * 50)} pontos</span> 
+             </div>
+        </div>
+
+          <div class="graficoEtxt">
+        <div class="graficoTxt">
+          <h4>Resumo</h4>
+        </div>
+        <div class="grafico">
+            <canvas class="grafico_pontos" id="pontos"></canvas>
+        </div>
+    </div>
+  </div>
+    `
+
+
+    const ctx = document.getElementById('pontos');
+
+var Grafico_pontos = new Chart(ctx, {
+    type: 'bar', // tipo do gráfico
+    data: {
+        labels: ['Resultado'], // rótulos dos meses
+        datasets: [{
+            label: 'Acertos', // rótulo das barras de temperatura
+            data: [acertos ], // valores da temperatura
+            backgroundColor: '#062c2d', // cor das barras de temperatura
+        }, {
+            label: 'Erros', // rótulo das barras de umidade
+            data: [erros], // valores da umidade
+            backgroundColor: '#c37c2b', // cor das barras de umidade
+        }]
+    },
+})
+
+   
+}
+
+ 
+
+
+</script>

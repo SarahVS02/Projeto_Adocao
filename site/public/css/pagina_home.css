@@ -1,0 +1,632 @@
+body{
+    background-color: #efc697;
+    background: rgb(239, 198, 151) transparent;
+    background: rgba(239, 198, 151, 0.8);
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+.container #logo{
+    margin: 25px;
+    width: 200px;
+    height: 50px;
+    margin-left: 500px;
+    margin-bottom: 25px;
+
+}
+
+.header {
+
+    display: flex;
+    background-color: #062C2D;
+    width: 100%;
+    height: 100px;
+   
+
+
+}
+
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 15px;
+    margin-right: 100px;
+  
+}
+
+.header .container{
+    justify-content: space-between;
+}
+
+
+.botao_home{
+    display: flex;
+    padding: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.botao_home:hover{
+ 
+    color: #894a00;
+    transition: 0.5s;
+}
+
+.botao_cadastro{
+    display: flex;
+    padding: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.botao_cadastro:hover{
+ 
+    color: rgba(137, 74, 0);
+    transition: 0.5s;
+}
+
+.botao_calculadora{
+    display: flex;
+    padding: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.botao_calculadora:hover{
+ 
+    color: rgba(137, 74, 0);
+    transition: 0.5s;}
+
+
+.botao_login{
+    display: flex;
+    padding: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.botao_login:hover{
+ 
+    color: rgba(137, 74, 0);
+    transition: 0.5s;
+}
+
+.botao_suporte{
+    display: flex;
+    padding: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.botao_suporte:hover{
+ 
+    color: rgba(137, 74, 0);
+    transition: 0.5s;
+}
+
+
+
+.container{
+
+    display: flex;
+    justify-content: space-around;
+   
+
+}
+
+
+.container .frase1{
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 45px;
+    color: #F1D7FF;
+    font-size: 250px;
+    margin-top: 25px;
+
+}
+
+
+
+
+
+
+
+
+/*Fim da Header*/
+
+.banner{    display: flex;
+
+    background-image: url(../assets_adocao/Good\ doggy-cuate.png);
+    background-size: cover;
+    border-radius: 75px;
+    width: 450px;
+    height: 470px;
+    margin:20px;
+    
+    
+
+}
+
+.conxteto{
+
+    display: flex;
+    width: 150px;
+    height: 500px;
+    margin: 10px;
+    margin-bottom: 350px;
+    margin-right: 450px;
+    align-items: center;
+}
+
+
+
+
+.container1{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 85px;
+}
+
+
+
+
+.titulo_contexto{
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    color: #062C2D;
+    display: flex;
+    width: 550px;
+    overflow-wrap: break-word;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align:left;
+    font-weight: bolder;
+ 
+
+}
+
+
+   
+.container2{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 670px;
+    background: rgb(137, 74, 0) transparent;
+    background: rgba(137, 74, 0, 0.4);
+    justify-content: space-between;
+    border-radius: 25px;
+    border-style:solid;
+    border-width: 5px;
+    border-color:#062C2D;
+    margin: -10px;
+    
+    
+}
+
+.titulo_textinhos{
+
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    color: #062C2D;
+    font-size: 35px;
+
+}
+
+.texto{
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: #000;
+    width: 400px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align:left;
+
+
+}
+
+.texto1{
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: #000;
+    width: 400px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align:left;
+
+
+}
+
+.texto2{
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    color:#062C2D;
+    width: 750px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align:left;
+    font-weight: bolder;
+    margin-top: 50px;
+
+
+}
+
+/*SAIBA MAIS*/
+
+
+
+.container3{
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+
+}
+
+
+
+.saiba_mais{
+
+    display: flex;
+    flex-direction: row;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    justify-content: space-around;
+    margin-top: 10px;
+
+}
+
+
+.baners{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.banner2{
+    display: flex;
+
+    background-image: url(../assets_adocao/Adopt\ a\ pet-pana.png);
+    background-size: cover;
+    border-radius: 75px;
+    width: 250px;
+    height: 270px;
+    margin-left: 50px;
+}
+
+.banner3{
+
+    display: flex;
+    background-image: url(../assets_adocao/Adopt\ a\ pet-amico.png);
+    background-size: cover;
+    border-radius: 75px;
+    width: 250px;
+    height: 270px;
+    margin: 10px;
+
+  
+}
+
+.banner4{
+    display: flex;
+
+    background-image: url(../assets_adocao/Dog\ walking-bro.png);
+    background-size: cover;
+    border-radius: 75px;
+    width: 250px;
+    height: 270px;
+    margin-right: 130px;
+   
+}
+
+.titulo_saiba_mais{
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 250px;
+    color: #000;
+    margin-top: 150px;
+    text-align: center;
+
+}
+
+
+
+.texto3{
+
+    display: flex;
+    flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    font-size: 17.5px;
+    color: #062C2D;
+    width: 250px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align: justify;
+    
+}
+
+.botao_adocao_responsavel{
+    
+    font-size: small;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: rgb(6, 44, 45);
+    color: white;
+    font-weight: bold;
+    background: rgb(6, 44, 45, 0.7);
+    width: 150px;
+    height: 60px;
+    margin: 15px;
+}
+
+
+.botao_adocao_responsavel:hover{
+    
+    background-color:#efc697;
+    border-width: 2.5px;
+    border-style: solid;
+    color: #062C2D;
+    border-color: #062C2D;
+    transition: 0.5s;
+}
+    
+    
+
+
+.texto4{
+
+    display: flex;
+    flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    font-size: 17.5px;
+    color: #062C2D;
+    width: 250px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align: justify;
+
+}
+
+.botao_abandono_em_alta{
+    
+    font-size: small;
+    border-radius: 30px;
+    border-width: 2.5px;
+    border-style: solid;
+    border-color: rgb(6, 44, 45);
+    color: white;
+    font-weight: bold;
+    background: rgb(6, 44, 45, 0.7);
+    width: 150px;
+    height: 60px;
+    margin: 15px;
+}
+
+
+.botao_abandono_em_alta:hover{
+    
+    background-color:#efc697 ;
+    color: #062C2D;
+    border-width: 2.5px;
+    border-style: solid;
+    border-color: #062C2D;
+    transition: 0.8s;
+}
+
+
+.texto5{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    font-size: 17.5px;
+    color: #062C2D;
+    width: 250px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align: justify;
+
+
+}
+
+.botao_cuidados_importantes{
+    
+    font-size: small;
+    border-radius: 30px;
+    border-width: 2.5px;
+    border-style: solid;
+    border-color: rgb(6, 44, 45);
+    color: white;
+    font-weight: bold;
+    background: rgb(6, 44, 45, 0.7);
+    width: 150px;
+    height: 60px;
+    margin: 15px;
+}
+
+
+.botao_cuidados_importantes:hover{
+    
+    background-color:#efc697 ;
+    color: #062C2D;
+    border-width: 2.5px;
+    border-style: solid;
+    border-color: #062C2D;
+    transition: 0.8s;
+}
+
+  .conxteto2{
+
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin: 10px;
+    margin-bottom: 350px;
+    margin-right: 450px;
+
+}
+
+
+.banner5 .container3{
+
+    display: flex;
+    width: 150px;
+    justify-content: center;
+
+
+}
+
+.container3{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.conxteto2{
+    
+    display: flex;
+    justify-content: center;
+   
+}
+.texto6{
+
+    display: flex;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 26px;
+    font-weight: bolder;
+    color:#062C2D;
+    width: 550px;
+    justify-content: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    display: flex;
+    flex-direction: row-reverse;
+
+
+}
+
+.texto7{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: #000;
+    width: 500px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align: justify;
+   margin: 15px;
+}
+
+.botao_simule_gastos {
+    font-size: small;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: rgb(6, 44, 45);
+    color: white;
+    font-weight: bold;
+    background: rgb(6, 44, 45, 0.7);
+    width: 150px;
+    height: 60px;
+    margin: 15px;
+}
+
+
+.botao_simule_gastos:hover{
+   
+    background-color:#efc697 ;
+    color: #062C2D;
+    border-width: 2.5px;
+    border-style: solid;
+    border-color: #062C2D;
+    transition: 0.8s;
+}
+
+.banner5{
+    display: flex;
+
+    background-image: url(../assets_adocao/Animal\ shelter-cuate.png);
+    background-size: cover;
+    border-radius: 75px;
+    width: 650px;
+    height: 653px;
+    margin-top: 5px;
+    
+    
+
+}
+
+
+.footer{
+    display: flex;
+    width: 100%;
+    background-color: #062C2D;
+    flex-direction: column;
+    height: 50px;
+    padding-top: 40px;
+}
+
+.footer .container4{
+    display: flex;
+    
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer span{
+    display: flex;
+    align-self: center;
+    color: whitesmoke;
+}

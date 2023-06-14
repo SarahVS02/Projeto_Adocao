@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adocao | Home</title>
+        <link rel="stylesheet" href="./css/pagina_home.css">
+        <link rel="stylesheet" href="./css/pagina_calculadora.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="container">
+                <img id="logo" src="./assets_adocao/ADOCÃO (1).png">
+                <ul class="navbar">
+                    <a class="botao_home" href="index.html"><i
+                            class="fa-solid fa-home"></i></a>
+                    <a class="botao_calculadora" href="Calculadora.html"><i
+                            class="fa fa-solid fa-calculator"></i></a>
+                    <a class="botao_cadastro" href="Cadastro.html"><i
+                            class="fa-solid fa-user"></i></a>
+                    <a class="botao_login" href="Login.html"><i
+                            class="fa-solid fa-sign-in"></i></a>
+                </a>
+                <a class="botao_suporte"
+                    href="https://app.pipefy.com/public/form/ASnqtS0i"><i
+                        class="fa-solid fa-headset"></i></a>
+            </a>
+        </ul>
+    </div>
+</div>
+
+<div class="calculadora">
+    <div class="container7">
+        <div class="formulario_calculadora">
+            <h4 class="titulo_calculadora">Simulador de Gastos</h4>
+            <h4 class="titulo_input ">Renda Salarial</h4>
+            <input class="inputs" type="number" id="input_renda_fixa">
+            <h4 class="titulo_input">Horas Livres</h4>
+            <input class="inputs" type="number" id="input_horas_livres">
+            <button class="button_calculadora" onclick="calcular_gastos()">Calcular</button>
+        </div>
+        <div class="container_texto">
+            <div class="texto_titulo_calculadora">
+                <h2>Simule seus gastos</h2>
+                <div class="texto_calculadora">
+                    <h4> Ter um cão é o sonho de muita gente pequena ou
+                    grande.
+                    Quem já viveu a experiência sabe o prazer que é ter
+                    um amiguinho de quatro patas em casa.
+                    No entanto, o ente canino requer cuidados e atenção,
+                    além de incluir uma série de custos para garantir
+                    seu bem estar.</h4>
+                <h4>É fundamental lembrar que ter um animal é maravilho,
+                    mas, como quase tudo,
+                    o benefício tem um custo que vai além de tempo e
+                    cuidado – que são os gastos financeiros.
+                    Portanto, pense bem antes de comprar ou adotar, pois
+                    nem todos tem o bolso preparados para tal decisão.</h4>
+
+                <h4>Para entender qual o porte de cahcorro mais indicado
+                    para adotar,informe os dados em nossa calculadora!</h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container_texto4">
+    <div class="texto4_titulo_calculadora">
+        <h2>Porte Mais Indicado:</h2>
+        <div id="resposta_pequeno_porte" class="texto4_calculadora">
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <div class="container4">
+        <span>CopyRight @ AdoCão 2023</span>
+
+    </div>
+
+</div>
+<script>
+    function calcular_gastos() {
+    var renda_fixa = Number(input_renda_fixa.value);
+    var horas_livre = Number(input_horas_livres.value);
+
+    resposta_pequeno_porte.innerHTML = ``
+
+
+    if (renda_fixa >= 1000 && horas_livre >= 40) {
+
+        resposta_pequeno_porte.innerHTML = ``
+
+        resposta_pequeno_porte.innerHTML += `Devido as informações que você inseriu, a melhor opção para você, seria um cachorro de grande porte! Um cachorro de grande porte, que pesam mais de 50kg, 
+consomem 500g de ração por dia, ou um saco de 15Kg de ração por mês. 
+Nesse caso o gasto fica por R$190,00. Para seguir a recomendação de um banho por mês, 
+o dono irá gastar R$120,00 por conta do porte do animal e do tempo demandado para os cuidados, levando em conta os R$250 para saúde,. 
+Logo, os cutos mensais, também, incluindo os gastos com saúde, totalizam R$500,00. `
+
+    }
+
+    if (renda_fixa < 1000 && renda_fixa >= 600 || horas_livre < 40 && horas_livre >= 20) {
+
+        resposta_pequeno_porte.innerHTML = ``
+
+        resposta_pequeno_porte.innerHTML += `Devido as informações que você inseriu, a melhor opção para você, seria um cachorro de médio porte! Um cachorro de porte médio, consome 300g por dia, ou seja, 9Kg de ração por mês. 
+Considerando o preço do quilo para este porte,  o total mensal fica em aproximadamente R$ 170,00
+Recomenda-se dois banhos por mês, e nesse porte cada banho 
+sai em média R$55,00; logo, o dispêndio mensal com higiene fica 
+torno de R$100,00. No total, levando em conta os R$ 150 para saúde, 
+a média mensal de um cão desse tipo aproximadamente  R$430,00. `
+
+
+    }
+
+
+
+    if (renda_fixa < 600 && renda_fixa >= 400 || horas_livre < 20 && horas_livre >= 10) {
+
+        resposta_pequeno_porte.innerHTML = ``
+
+        resposta_pequeno_porte.innerHTML += `Devido as informações que você inseriu, a melhor opção para você, seria um cachorro de pequeno porte! 
+Se alimenta duas vezes ao dia com 50g de ração, totalizando 1500g mensais. O custo mensal de ração é de R$150,00.
+Os veterinários indicam para a maior parte das raças de pequeno porte um 
+banho por semana, que custa, em média, R$45,00, totalizando R$180,00 mensais. 
+Além do banho e da ração, reservar uma verba de R$70 por mês é recomendável 
+para eventuais as idas ao veterinário e gastos com saúde
+Dessa forma, o cão de pequeno porte possui um gasto mensal de R$400,00.`
+
+    }
+
+    if (renda_fixa < 400 && horas_livre < 10) {
+
+        resposta_pequeno_porte.innerHTML = ``
+
+        resposta_pequeno_porte.innerHTML += `Talvez não seja o melhor momento para adotar um cachorrinho!`
+
+    }
+}
+
+
+
+
+
+    </script>

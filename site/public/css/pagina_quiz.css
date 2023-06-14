@@ -1,0 +1,22 @@
+
+/* Estilos CSS para o quiz */
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.options label {
+  display: block;
+}
+
+#submit-btn {
+  display: block;
+  margin-top: 20px;
+}

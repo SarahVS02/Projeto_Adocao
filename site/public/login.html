@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/pagina_login.css">
+        <link rel="stylesheet" href="./css/pagina_home.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
+            rel="stylesheet">
+
+        <title>Cadastro</title>
+
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="container">
+                <img id="logo" src="./assets_adocao/ADOCÃO (1).png">
+                <ul class="navbar">
+                    <a class="botao_home" href="index.html"><i
+                            class="fa-solid fa-home"></i></a>
+                    <a class="botao_calculadora" href="Calculadora.html"><i
+                            class="fa fa-solid fa-calculator"></i></a>
+                    <a class="botao_cadastro" href="Cadastro.html"><i
+                            class="fa-solid fa-user"></i></a>
+                    <a class="botao_login" href="Login.html"><i
+                            class="fa-solid fa-sign-in"></i></a>
+                </a>
+                <a class="botao_suporte"
+                    href="https://app.pipefy.com/public/form/ASnqtS0i"><i
+                        class="fa-solid fa-headset"></i></a>
+            </a>
+        </ul>
+    </div>
+</div>
+
+    <div class="login">
+        <div class="container6">
+            <div class="formulario_login">
+                <h4 class="titulo_login">Login</h4>
+                <h4 class="titulo_input">Email</h4>
+                <input class="inputs" type="email" id="input_email">
+                <span class="erro" id=span_erro_email></span>
+                <h4 class="titulo_input">Senha</h4>
+                <input class="inputs" type="password" id="input_senha">
+                <button class="button_login" onclick="entrar()">Entrar</button>
+            </div>
+            <div class="banner_login">
+
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="contexto">
+            <h2 class="titulo_contexto">Como o cachorro é visto na sociedade
+                autal </h2>
+            <h3 class="texto1">
+
+            </h3>
+            <h3 class="texto2">Um dos relacionamentos mais especiais é, sem
+                dúvida, o que existe entre o cão e a pessoa. Ele remonta a
+                milhares de anos e, desde então, só se estreitou e se aproximou
+                cada vez mais. Com o tempo, a importância do cão na sociedade
+                foi mais do que comprovada.</h3>
+
+        </div>
+        <div class="banner">
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="saiba_mais">
+            <h3 class="texto3"> Eos velit fuga et commodi maiores aut
+                repudiandae quae. Aut dolorum fugit non vitae consectetur et
+                tenetur beatae At voluptatibus accusamus et sunt aperiam. Non
+                voluptatibus neque id autem quis ea cumque impedit est
+                laudantium provident! Aut aliquam voluptatem vel officiis
+                corrupti ut aspernatur sunt! O porquê da luta da comercialização
+                de cachorros é tão importante!</h3>
+
+            <h3 class="texto4"> Eos velit fuga et commodi maiores aut
+                repudiandae quae. Aut dolorum fugit non vitae consectetur et
+                tenetur beatae At voluptatibus accusamus et sunt aperiam. Non
+                voluptatibus neque id autem quis ea cumque impedit est
+                laudantium provident! Aut aliquam voluptatem vel officiis
+                corrupti ut aspernatur sunt! O porquê da luta da comercialização
+                de cachorros é tão importante!</h3>
+
+            <h3 class="texto5"> Eos velit fuga et commodi maiores aut
+                repudiandae quae. Aut dolorum fugit non vitae consectetur et
+                tenetur beatae At voluptatibus accusamus et sunt aperiam. Non
+                voluptatibus neque id autem quis ea cumque impedit est
+                laudantium provident! Aut aliquam voluptatem vel officiis
+                corrupti ut aspernatur sunt! O porquê da luta da comercialização
+                de cachorros é tão importante!</h3>
+
+        </div>
+        <div class="baners">
+            <div class="banner2">
+            </div>
+            <div class="banner3">
+            </div>
+            <div class="banner4">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="footer">
+            <div class="container4">
+                <span>CopyRight @ AdoCão 2023</span>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>
+
+<script>
+    
+    
+    function entrar() {
+        var emailVar = input_email.value;
+        var senhaVar = input_senha.value;
+
+        if (emailVar == "" || senhaVar == "") {
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+           
+            return false;
+        }
+        else {
+            setInterval(sumirMensagem, 5000)
+        }
+
+        console.log("FORM LOGIN: ", emailVar);
+        console.log("FORM SENHA: ", senhaVar);
+
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function (resposta) {
+            console.log("ESTOU NO THEN DO entrar()!")
+
+            if (resposta.ok) {
+                console.log(resposta);
+
+                resposta.json().then(json => {
+                    console.log(json);
+                    console.log(JSON.stringify(json));
+
+                    sessionStorage.EMAIL_USUARIO = json.email;
+                    sessionStorage.NOME_USUARIO = json.nome;
+                    sessionStorage.ID_USUARIO = json.id;
+
+                    setTimeout(function () {
+                        window.location = "pagina_quiz.html";
+                    }, 1000); // apenas para exibir o loading
+
+                });
+
+            } else {
+
+                console.log("Houve um erro ao tentar realizar o login!");
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                });
+            }
+
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+
+        return false;
+    }
+
+    function sumirMensagem() {
+        //cardErro.style.display = "none"
+    }
+
+
+</script>
